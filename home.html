@@ -1,11 +1,565 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MoonLight</title>
-</head>
-<body>
-    
-</body>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar-left">
+            <span>Free shipping on all orders over $35 in the U.S!</span>
+          </div>
+          <div class="top-bar-right">
+            <a href="#" class="lang-btn">
+              <img class="flag" src="images/english.png" alt="English flag" />
+              English
+            </a>
+            <div class="top-divider"></div>
+            <a href="#" class="currency-btn">USD</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav bar -->
+      <div class="main-header">
+        <div class="container">
+          <div class="logo">
+            <a href="home.html">
+              <img src="images/logo.svg" alt="MoonLight Logo" />
+            </a>
+          </div>
+          <div class="header-icons">
+            <a href="#" class="icon-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#" class="icon-btn">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+            <a href="#" class="icon-btn">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="#" class="icon-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-wrapper">
+        <nav class="nav-bar">
+          <div class="container">
+            <ul class="main-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li class="nav-gap"><a href="#">Special Offer</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-carousel">
+      <input type="radio" name="hero" id="slide1" checked hidden />
+      <input type="radio" name="hero" id="slide2" hidden />
+      <input type="radio" name="hero" id="slide3" hidden />
+
+      <div class="hero-track">
+        <div class="hero-slide">
+          <img src="/images/hero-img.jpg" alt="Slide 1" />
+        </div>
+        <div class="hero-slide">
+          <img src="/images/hero-img-2.jpg" alt="Slide 2" />
+        </div>
+        <div class="hero-slide">
+          <img src="/images/hero-img-3.jpg" alt="Slide 3" />
+        </div>
+      </div>
+
+      <div class="hero-arrows">
+        <label class="hero-prev s1" for="slide3">&#10094;</label>
+        <label class="hero-prev s2" for="slide1">&#10094;</label>
+        <label class="hero-prev s3" for="slide2">&#10094;</label>
+        <label class="hero-next s1" for="slide2">&#10095;</label>
+        <label class="hero-next s2" for="slide3">&#10095;</label>
+        <label class="hero-next s3" for="slide1">&#10095;</label>
+      </div>
+    </section>
+    <!-- service section  -->
+    <section>
+      <div class="services-section">
+        <div class="services-container">
+          <div class="service-box">
+            <div class="service-icon">
+              <img src="images/icon-1.png" alt="icon1" />
+            </div>
+            <h3 class="service-title">WorldWide Free shipping</h3>
+            <p class="service-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <img src="images/icon-2.png" alt="icon2" />
+            </div>
+            <h3 class="service-title">Money Back Guarantee</h3>
+            <p class="service-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <img src="images/icon-3.png" alt="icon3" />
+            </div>
+            <h3 class="service-title">Online Support 24/7</h3>
+            <p class="service-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- blue offer banner -->
+      <div class="banner-box">
+        <div class="banner-inner">
+          <p class="banner-text">
+            Welcome to MoonLight! Wrap new offers/gift every single day on
+            Weekends - New Coupon code: Tomly811
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <input type="radio" name="featured" id="fp1" checked hidden />
+    <input type="radio" name="featured" id="fp2" hidden />
+
+    <section class="featured-section">
+      <div class="featured-top">
+        <p class="featured-small-text">POPULAR ITEMS ON THIS WEEK</p>
+        <h2 class="featured-big-text">FEATURED PRODUCTS</h2>
+      </div>
+
+      <div class="featured-row">
+        <div class="featured-arrows">
+          <label class="featured-arrow featured-prev fp1" for="fp2"
+            >&#10094;</label
+          >
+          <label class="featured-arrow featured-prev fp2" for="fp1"
+            >&#10094;</label
+          >
+          <label class="featured-arrow featured-next fp1" for="fp2"
+            >&#10095;</label
+          >
+          <label class="featured-arrow featured-next fp2" for="fp1"
+            >&#10095;</label
+          >
+        </div>
+
+        <div class="products-area">
+          <div class="products-list">
+            <!-- Product 1 -->
+            <div class="product-box">
+              <div class="product-img-box">
+                <img src="/images/prod-img2.jpg" alt="product 1" />
+                <div class="product-hover-btns">
+                  <button class="product-icon-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-text">
+                <p class="product-title">Briggs &amp; Stratton 30W Engine</p>
+                <div class="product-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="product-price">$84.00</p>
+                <button class="product-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-box">
+              <div class="product-img-box">
+                <img src="/images/prod-img3.jpg" alt="product 2" />
+                <div class="product-hover-btns">
+                  <button class="product-icon-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-text">
+                <p class="product-title">Ordinary Antioxidant Formula</p>
+                <div class="product-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="product-price">$4.10</p>
+                <button class="product-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-box">
+              <div class="product-img-box">
+                <img src="/images/prod-img4.jpg" alt="product 3" />
+                <div class="product-hover-btns">
+                  <button class="product-icon-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-text">
+                <p class="product-title">Rosehip Seed Oil by Leven Rose</p>
+                <div class="product-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="product-price">$1.90</p>
+                <button class="product-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-box">
+              <div class="product-img-box">
+                <img src="/images/prod-img-5.jpg" alt="product 4" />
+                <div class="product-hover-btns">
+                  <button class="product-icon-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-text">
+                <p class="product-title">Teddie Organics Rosehip Seed</p>
+                <div class="product-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="product-price">$210.00</p>
+                <button class="product-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-box">
+              <div class="product-img-box">
+                <img src="/images/prod-img.jpg" alt="product 5" />
+                <div class="product-hover-btns">
+                  <button class="product-icon-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                  </button>
+                  <button class="product-icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-text">
+                <p class="product-title">Trilogy Vital Cream for Unisex</p>
+                <div class="product-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="product-price">$150.00</p>
+                <button class="product-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer-banner">
+      <div class="offer-banner-item">
+        <img src="images/offer-1.jpg" alt="offer 1" />
+      </div>
+      <div class="offer-banner-item">
+        <img src="images/offer-2.jpg" alt="offer 2" />
+      </div>
+    </section>
+    <input
+      type="radio"
+      name="cat-slide"
+      id="cat1"
+      class="cat-radio"
+      checked
+      hidden
+    />
+    <input type="radio" name="cat-slide" id="cat2" class="cat-radio" hidden />
+
+    <!-- categories-section -->
+
+    <section class="categories-section">
+      <div class="catergories-top">
+        <p class="cat-small-text">TOP SEARCH OF THIS MONTH</p>
+        <h2 class="cat-big-text">SHOP BY CATEGORIES</h2>
+      </div>
+      <div class="categories-slider-outer">
+        <div class="categories-slider-wrapper">
+          <label for="cat1" class="cat-arrow cat-prev">&#10094;</label>
+          <div class="cat-viewport">
+            <div class="cat-list">
+              <div class="cat-card">
+                <div class="cat-img-box">
+                  <img src="images/cat-img1.jpg" alt="Make Up" />
+                </div>
+                <p class="cat-name">Make Up</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-img-box">
+                  <img src="images/cart-img2.jpg" alt="Skincare" />
+                </div>
+                <p class="cat-name">Skincare</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-img-box">
+                  <img src="images/cat-img3.jpg" alt="Perfume" />
+                </div>
+                <p class="cat-name">Perfume</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-img-box">
+                  <img src="images/cat-img-4.jpg" alt="Bath&Body" />
+                </div>
+                <p class="cat-name">Bath & Body</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-img-box">
+                  <img src="images/cat-immg-5.jpg" alt="Face care" />
+                </div>
+                <p class="cat-name">Face care</p>
+              </div>
+              <div class="cat-card">
+                <div class="cat-img-box">
+                  <img src="images/cat-img-6.jpg" alt="Hair care" />
+                </div>
+                <p class="cat-name">Hair care</p>
+              </div>
+            </div>
+          </div>
+          <label for="cat2" class="cat-arrow cat-next">&#10095;</label>
+        </div>
+      </div>
+    </section>
+    <input
+      type="radio"
+      name="comp-slide"
+      id="comp1"
+      class="comp-radio"
+      checked
+      hidden
+    />
+    <input
+      type="radio"
+      name="comp-slide"
+      id="comp2"
+      class="comp-radio"
+      hidden
+    />
+    <section class="companies-section">
+      <div class="companies-slider-outer">
+        <div class="companies-slider-wrapper">
+          <label for="comp1" class="comp-arrow comp-prev">&#10094;</label>
+
+          <div class="comp-viewport">
+            <div class="comp-list">
+              <!-- Logo 1 -->
+              <div class="comp-card">
+                <div class="comp-logo-box">
+                  <img src="images/stillness-fishing.jpg" alt="Brand 1" />
+                </div>
+              </div>
+
+              <!-- Logo 2 -->
+              <div class="comp-card">
+                <div class="comp-logo-box">
+                  <img src="images/prologue.jpg" alt="Brand 2" />
+                </div>
+              </div>
+
+              <!-- Logo 3 -->
+              <div class="comp-card">
+                <div class="comp-logo-box">
+                  <img src="images/forefathers.jpg" alt="Brand 3" />
+                </div>
+              </div>
+
+              <!-- Logo 4 -->
+              <div class="comp-card">
+                <div class="comp-logo-box">
+                  <img src="images/loewe.jpg" alt="Brand 4" />
+                </div>
+              </div>
+
+              <!-- Logo 5 -->
+              <div class="comp-card">
+                <div class="comp-logo-box">
+                  <img src="images/the-laundry.jpg" alt="Brand 5" />
+                </div>
+              </div>
+
+              <!-- Logo 6 -->
+              <div class="comp-card">
+                <div class="comp-logo-box">
+                  <img src="images/forefathers.jpg" alt="Brand 6" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <label for="comp2" class="comp-arrow comp-next">&#10095;</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter section -->
+    <section class="newsletter-section">
+      <div class="newsletter-title">
+        <p>Sign up for Newsletter & <span>get 25%</span> Off first order</p>
+      </div>
+      <div class="newsletter-form">
+        <input
+          type="email"
+          class="newsletter-input"
+          placeholder="Your email address"
+        />
+        <button class="newsletter-btn">SUBSCRIBE</button>
+      </div>
+    </section>
+    <!-- footer -->
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <!-- col 1 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">About Us</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Codes</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">1-877-992-5474</a></li>
+          </ul>
+        </div>
+
+        <!-- col 2 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Shop</h4>
+          <ul class="footer-links">
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Ordering &amp; Shipping</a></li>
+            <li><a href="#">Coupons &amp; Promo</a></li>
+            <li><a href="#">Codes</a></li>
+            <li><a href="#">Returns &amp; Exchanges</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <!-- 
+       col 3 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Follow</h4>
+          <ul class="footer-links footer-social">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus-g"></i> Google+</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest-p"></i> Pinterest</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- col 4 -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Ordering &amp; Shipping</a></li>
+            <li><a href="#">Coupons &amp; Promo</a></li>
+            <li><a href="#">Codes</a></li>
+            <li><a href="#">Returns &amp; Exchanges</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="footer-bottom">
+        <p>SM Moonlight &copy; 2026 Demo Store. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
